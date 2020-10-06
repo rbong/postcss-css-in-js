@@ -1,6 +1,7 @@
 'use strict';
 
 const Input = require('postcss/lib/input');
+const substitutions = require('./substitute-javascript');
 const TemplateSafeParser = require('./template-safe-parser');
 
 function templateSafeParse(css, opts) {
@@ -12,6 +13,11 @@ function templateSafeParse(css, opts) {
 	const parser = new TemplateSafeParser(input);
 
 	parser.parse();
+
+	if (opts.syntax.config.unstable_substitute) {
+		parser.root.unstable_substitute = true;
+		substitutions.addSubstitutions(parser.root, css, opts);
+	}
 
 	return parser.root;
 }

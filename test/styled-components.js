@@ -323,4 +323,90 @@ describe('styled-components', () => {
 		expect(document.source).toHaveProperty('lang', 'jsx');
 		expect(document.nodes).toHaveLength(3);
 	});
+
+	it('re-writes various stuff to substitutes', () => {
+		const code = `
+			import styled from 'styled-components';
+
+			const greenColor = 'green';
+			const returnGreenColor = () => 'green'
+
+			const C = styled.div\`
+				@media (min-width: \${t => t.test}) {
+					color: \${p => p.width};
+					\${prop}: green;
+					background-\${prop}: dark\${greenColor};
+					\${decl};
+					\${css\`
+					  color: light\${returnGreenColor()}
+					\`}
+				}
+			\`;
+		`;
+
+		const expectation = {
+			nodes: [
+				{
+					nodes: [
+						{
+							type: 'atrule',
+							params: '(min-width: $dummyValue12)',
+							nodes: [
+								{
+									type: 'decl',
+									prop: 'color',
+									value: '$dummyValue0',
+								},
+								{
+									type: 'decl',
+									prop: '$dummyValue0',
+									value: 'green',
+								},
+								{
+									type: 'decl',
+									prop: 'background-$dummyValue11',
+									value: 'dark$dummyValue4',
+								},
+								{
+									type: 'literal',
+								},
+								{
+									type: 'literal',
+									nodes: [
+										{
+											type: 'root',
+											nodes: [
+												{
+													type: 'decl',
+													prop: 'color',
+													value: 'light$dummyValue5',
+												},
+											],
+										},
+									],
+								},
+							],
+						},
+					],
+				},
+			],
+		};
+
+		const document = syntax({ jsx: { config: { unstable_substitute: true } } }).parse(code);
+
+		// The document should have the right properties.
+		expect(document.source).toHaveProperty('lang', 'jsx');
+
+		// The document should, without stringifying first, have the right values.
+		expect(document).toMatchObject(expectation);
+
+		// If we stringify the document, it should not have changed in any way.
+		expect(document.toString()).toBe(code);
+
+		// During stringifying, the substitutions are removed and added. After that they should still have the right values.
+		expect(document).toMatchObject(expectation);
+
+		// And one last check - the first time the document is stringified, should not affect subsequent stringifications.
+		expect(document.toString()).toBe(code);
+	});
 });
