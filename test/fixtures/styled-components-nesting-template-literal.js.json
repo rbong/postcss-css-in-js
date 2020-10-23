@@ -17,6 +17,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 2,
 							"line": 3,
 							"column": 2
 						},
@@ -38,6 +39,7 @@
 							]
 						},
 						"end": {
+							"offset": 15,
 							"line": 3,
 							"column": 15
 						}
@@ -53,6 +55,7 @@
 					"type": "literal",
 					"source": {
 						"start": {
+							"offset": 18,
 							"line": 4,
 							"column": 2
 						},
@@ -83,6 +86,7 @@
 					"type": "literal",
 					"source": {
 						"start": {
+							"offset": 56,
 							"line": 7,
 							"column": 2
 						},
@@ -125,6 +129,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 2,
 					"column": 26
 				},

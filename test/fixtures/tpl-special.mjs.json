@@ -26,6 +26,7 @@
 							"type": "decl",
 							"source": {
 								"start": {
+									"offset": 16,
 									"line": 7,
 									"column": 2
 								},
@@ -55,6 +56,7 @@
 									]
 								},
 								"end": {
+									"offset": 45,
 									"line": 7,
 									"column": 31
 								}
@@ -65,6 +67,7 @@
 					],
 					"source": {
 						"start": {
+							"offset": 1,
 							"line": 6,
 							"column": 1
 						},
@@ -94,6 +97,7 @@
 							]
 						},
 						"end": {
+							"offset": 47,
 							"line": 8,
 							"column": 1
 						}
@@ -117,6 +121,7 @@
 							"type": "decl",
 							"source": {
 								"start": {
+									"offset": 70,
 									"line": 10,
 									"column": 2
 								},
@@ -146,6 +151,7 @@
 									]
 								},
 								"end": {
+									"offset": 101,
 									"line": 10,
 									"column": 33
 								}
@@ -156,6 +162,7 @@
 					],
 					"source": {
 						"start": {
+							"offset": 49,
 							"line": 9,
 							"column": 1
 						},
@@ -185,6 +192,7 @@
 							]
 						},
 						"end": {
+							"offset": 103,
 							"line": 11,
 							"column": 1
 						}
@@ -219,6 +227,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 5,
 					"column": 31
 				},

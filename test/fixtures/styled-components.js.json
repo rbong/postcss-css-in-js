@@ -18,6 +18,7 @@
 					"type": "comment",
 					"source": {
 						"start": {
+							"offset": 1,
 							"line": 4,
 							"column": 1
 						},
@@ -39,6 +40,7 @@
 							]
 						},
 						"end": {
+							"offset": 45,
 							"line": 4,
 							"column": 45
 						}
@@ -53,6 +55,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 47,
 							"line": 5,
 							"column": 1
 						},
@@ -74,6 +77,7 @@
 							]
 						},
 						"end": {
+							"offset": 112,
 							"line": 5,
 							"column": 66
 						}
@@ -89,6 +93,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 114,
 							"line": 6,
 							"column": 1
 						},
@@ -110,6 +115,7 @@
 							]
 						},
 						"end": {
+							"offset": 174,
 							"line": 6,
 							"column": 61
 						}
@@ -125,6 +131,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 177,
 							"line": 8,
 							"column": 1
 						},
@@ -146,6 +153,7 @@
 							]
 						},
 						"end": {
+							"offset": 191,
 							"line": 8,
 							"column": 15
 						}
@@ -161,6 +169,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 193,
 							"line": 9,
 							"column": 1
 						},
@@ -182,6 +191,7 @@
 							]
 						},
 						"end": {
+							"offset": 204,
 							"line": 9,
 							"column": 12
 						}
@@ -197,6 +207,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 206,
 							"line": 10,
 							"column": 1
 						},
@@ -218,6 +229,7 @@
 							]
 						},
 						"end": {
+							"offset": 225,
 							"line": 10,
 							"column": 20
 						}
@@ -233,6 +245,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 227,
 							"line": 11,
 							"column": 1
 						},
@@ -254,6 +267,7 @@
 							]
 						},
 						"end": {
+							"offset": 258,
 							"line": 11,
 							"column": 32
 						}
@@ -269,6 +283,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 260,
 							"line": 12,
 							"column": 1
 						},
@@ -290,6 +305,7 @@
 							]
 						},
 						"end": {
+							"offset": 278,
 							"line": 12,
 							"column": 19
 						}
@@ -317,6 +333,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 3,
 					"column": 30
 				},

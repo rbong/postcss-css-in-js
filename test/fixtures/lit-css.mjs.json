@@ -18,6 +18,7 @@
 					"type": "comment",
 					"source": {
 						"start": {
+							"offset": 2,
 							"line": 6,
 							"column": 2
 						},
@@ -43,6 +44,7 @@
 							]
 						},
 						"end": {
+							"offset": 35,
 							"line": 6,
 							"column": 35
 						}
@@ -66,6 +68,7 @@
 							"type": "decl",
 							"source": {
 								"start": {
+									"offset": 48,
 									"line": 8,
 									"column": 3
 								},
@@ -91,6 +94,7 @@
 									]
 								},
 								"end": {
+									"offset": 75,
 									"line": 8,
 									"column": 30
 								}
@@ -101,6 +105,7 @@
 					],
 					"source": {
 						"start": {
+							"offset": 38,
 							"line": 7,
 							"column": 2
 						},
@@ -126,6 +131,7 @@
 							]
 						},
 						"end": {
+							"offset": 78,
 							"line": 9,
 							"column": 2
 						}
@@ -140,6 +146,7 @@
 					"type": "literal",
 					"source": {
 						"start": {
+							"offset": 81,
 							"line": 10,
 							"column": 2
 						},
@@ -174,6 +181,7 @@
 					"type": "literal",
 					"source": {
 						"start": {
+							"offset": 100,
 							"line": 10,
 							"column": 21
 						},
@@ -208,6 +216,7 @@
 					"type": "literal",
 					"source": {
 						"start": {
+							"offset": 114,
 							"line": 10,
 							"column": 35
 						},
@@ -258,6 +267,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 5,
 					"column": 20
 				},

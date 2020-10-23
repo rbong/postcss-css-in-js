@@ -7,6 +7,16 @@ const syntax = require('../');
 
 describe('not throw error for non-style js file', () => {
 	files.forEach((file) => {
+		if (
+			file.includes('styled-components-nesting-expr') ||
+			file.includes('styled-components-nesting-nesting') ||
+			file.includes('styled-components-nesting') ||
+			file.includes('styled-components-nesting2') ||
+			file.includes('styled-components-nesting3')
+		) {
+			return;
+		}
+
 		it(file, () => {
 			const code = fs.readFileSync(file);
 			const document = syntax.parse(code, {

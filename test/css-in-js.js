@@ -1,11 +1,11 @@
 'use strict';
 
 const autoprefixer = require('autoprefixer');
-const cases = require('postcss-parser-tests');
 const JSON5 = require('json5');
 const objectStringify = require('../object-stringify');
 const postcss = require('postcss');
 const syntax = require('../');
+const { eachTest } = require('postcss-parser-tests');
 
 describe('CSS in JS', () => {
 	it('basic js', () => {
@@ -168,7 +168,7 @@ describe('CSS in JS', () => {
 	});
 
 	describe('objectify for css', () => {
-		cases.each((name, css) => {
+		eachTest((name, css) => {
 			if (name === 'bom.css') return;
 
 			if (name === 'custom-properties.css') return;

@@ -17,6 +17,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 2,
 							"line": 6,
 							"column": 2
 						},
@@ -34,6 +35,7 @@
 							]
 						},
 						"end": {
+							"offset": 74,
 							"line": 6,
 							"column": 74
 						}
@@ -57,6 +59,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 5,
 					"column": 31
 				},

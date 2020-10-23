@@ -17,6 +17,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 2,
 							"line": 5,
 							"column": 2
 						},
@@ -34,6 +35,7 @@
 							]
 						},
 						"end": {
+							"offset": 15,
 							"line": 5,
 							"column": 15
 						}
@@ -49,6 +51,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 18,
 							"line": 6,
 							"column": 2
 						},
@@ -66,6 +69,7 @@
 							]
 						},
 						"end": {
+							"offset": 59,
 							"line": 6,
 							"column": 43
 						}
@@ -89,6 +93,7 @@
 					]
 				},
 				"start": {
+					"offset": 0,
 					"line": 4,
 					"column": 37
 				},
@@ -262,6 +267,7 @@
 					"type": "decl",
 					"source": {
 						"start": {
+							"offset": 2,
 							"line": 25,
 							"column": 2
 						},
@@ -269,6 +275,7 @@
 							"file": "react-emotion.jsx"
 						},
 						"end": {
+							"offset": 22,
 							"line": 25,
 							"column": 22
 						}
@@ -282,6 +289,7 @@
 					"file": "react-emotion.jsx"
 				},
 				"start": {
+					"offset": 0,
 					"line": 24,
 					"column": 21
 				},
