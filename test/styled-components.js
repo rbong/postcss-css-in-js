@@ -35,8 +35,7 @@ describe('styled-components', () => {
 		});
 	});
 
-	// eslint-disable-next-line jest/no-disabled-tests
-	it.skip('interpolation with css template literal', () => {
+	it('interpolation with css template literal', () => {
 		const code = [
 			"import styled, { css } from 'styled-components';",
 
@@ -57,8 +56,7 @@ describe('styled-components', () => {
 		expect(document.nodes).toHaveLength(1);
 	});
 
-	// eslint-disable-next-line jest/no-disabled-tests
-	it.skip('interpolation with two css template literals', () => {
+	it('interpolation with two css template literals', () => {
 		const code = [
 			"import styled, { css } from 'styled-components';",
 
