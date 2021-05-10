@@ -94,7 +94,7 @@ const plugins = [
 	'jsx',
 	'typescript',
 	'objectRestSpread',
-	['decorators', { decoratorsBeforeExport: true }],
+	['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
 	'classProperties',
 	'exportExtensions',
 	'asyncGenerators',
