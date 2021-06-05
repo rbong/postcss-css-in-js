@@ -128,7 +128,7 @@ describe('CSS in JS', () => {
 		`);
 	});
 
-	it('float', () => {
+	it('cssFloat', () => {
 		const code = `
 			import glm from 'glamorous';
 			const Component1 = glm.a({
@@ -148,21 +148,24 @@ describe('CSS in JS', () => {
 				cssFloat: "left",
 			});
 		`);
+	});
 
-		root.first.first.nodes = [
-			postcss.decl({
-				prop: 'float',
-				value: 'right',
-				raws: {
-					before: root.first.first.first.raws.before,
-				},
-			}),
-		];
+	it('float', () => {
+		const code = `
+			const component = styled(Btn)({
+				float: "left",
+			});
+		`;
+
+		const root = syntax.parse(code, {
+			from: '/fixtures/styled-float.jsx',
+		});
+
+		expect(root.first.first.first).toHaveProperty('prop', 'float');
 
 		expect(root.toString()).toBe(`
-			import glm from 'glamorous';
-			const Component1 = glm.a({
-				cssFloat: "right",
+			const component = styled(Btn)({
+				float: "left",
 			});
 		`);
 	});

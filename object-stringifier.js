@@ -26,10 +26,6 @@ class ObjectStringifier extends Stringifier {
 	decl(node, semicolon) {
 		let prop = this.rawValue(node, 'prop');
 
-		if (prop === 'float') {
-			prop = 'cssFloat';
-		}
-
 		let string = prop;
 
 		const isObjectShorthand = node.raws.node && node.raws.node.shorthand;
